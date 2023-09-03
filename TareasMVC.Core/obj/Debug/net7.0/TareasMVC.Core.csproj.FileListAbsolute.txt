@@ -1,0 +1,12 @@
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\bin\Debug\net7.0\TareasMVC.Core.deps.json
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\bin\Debug\net7.0\TareasMVC.Core.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\bin\Debug\net7.0\TareasMVC.Core.pdb
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.csproj.AssemblyReference.cache
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.AssemblyInfoInputs.cache
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.AssemblyInfo.cs
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.csproj.CoreCompileInputs.cache
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\refint\TareasMVC.Core.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\TareasMVC.Core.pdb
+C:\Projects\ASP.NET\TareasMVC\TareasMVC.Core\obj\Debug\net7.0\ref\TareasMVC.Core.dll
