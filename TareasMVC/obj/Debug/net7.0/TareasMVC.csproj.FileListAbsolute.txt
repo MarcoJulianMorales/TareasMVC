@@ -81,3 +81,15 @@ C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\Microsoft.AspNetCore.Id
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\en\TareasMVC.resources.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Controllers.HomeController.en.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.csproj.GenerateResource.cache
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\en\TareasMVC.resources.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Home.Index.en.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\es\TareasMVC.resources.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Home.Index.es.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\es\TareasMVC.resources.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.RecursoCompartido.en.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.RecursoCompartido.es.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Shared._TraduccionesJs.en.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Shared._TraduccionesJs.es.resources
