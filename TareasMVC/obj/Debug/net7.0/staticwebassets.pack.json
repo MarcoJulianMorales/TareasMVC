@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Projects\\ASP.NET\\TareasMVC\\TareasMVC\\wwwroot\\js\\tareas.js",
+      "PackagePath": "staticwebassets\\js\\tareas.js"
+    },
+    {
       "Id": "C:\\Projects\\ASP.NET\\TareasMVC\\TareasMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

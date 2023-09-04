@@ -9,13 +9,15 @@
     <h1 class="display-4">@localizer["Mis Tareas"]</h1>
     @*<p>@localizer["Aprende"]</p>*@
 </div>
+<button type="button" class="btn btn-primary mb-3" onclick="agregarNuevaTarea()">@localizer["Nueva"]</button>
 
 <div id="contenedor-listado-tareas" class="text-center">
     <div class="text-start" data-bind="foreach: tareas">
         <div name="tarea" class="border mb-2 p-2" style="cursor: pointer">
-            <div data-bind="text: titulo" class="fw-bold">
+            <div data-bind="text: titulo, hidden: esNuevo" class="fw-bold"></div>
 
-            </div>
+            <input type="text" name="titulo-tarea" autocomplete="off" 
+                    data-bind="value: titulo, visible: esNuevo, event: {focusout: manejarFocusOutTituloTarea}"/>
         </div>
     </div>
 
@@ -30,6 +32,7 @@
 
 @section Scripts{
     <script src="~/js/Utilidades.js"></script>
+    <script src="~/js/tareas.js" asp-append-version="true"></script>
 
     <script>
         function tareaListadoViewModelFn() {
@@ -46,10 +49,19 @@
             })
         }
 
+        function tareaElementoListadoViewModel({id, titulo}){
+            var self = this;
+            self.id = ko.observable(id);
+            self.titulo = ko.observable(titulo);
+            self.esNuevo = ko.pureComputed(function (){
+                return self.id() === 0;
+            })
+        }
+
         const tareaListadoViewModel = new tareaListadoViewModelFn();
 
         setTimeout(() => {
-            tareaListadoViewModel.tareas.push({titulo: 'Tarea1'});
+            //tareaListadoViewModel.tareas.push({titulo: 'Tarea1'});
             tareaListadoViewModel.cargando(false);
         }, 1000);
 
