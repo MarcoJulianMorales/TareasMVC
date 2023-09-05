@@ -36,6 +36,8 @@ builder.Services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.Ap
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Recursos");
 
+builder.Services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
+
 var app = builder.Build();
 
 //var culturasUISoportadas = new[] { "es", "en" };
