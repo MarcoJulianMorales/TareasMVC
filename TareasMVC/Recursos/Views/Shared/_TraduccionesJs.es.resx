@@ -117,7 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="inesperado" xml:space="preserve">
+    <value>Ha ocurrido un error con su solicitud</value>
+  </data>
   <data name="msjError" xml:space="preserve">
     <value>¡Ha ocurrido un error!</value>
+  </data>
+  <data name="noEncontrado" xml:space="preserve">
+    <value>El recurso solicitado no fue encontrado</value>
   </data>
 </root>

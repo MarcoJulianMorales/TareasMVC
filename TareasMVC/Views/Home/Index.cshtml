@@ -62,10 +62,12 @@
 
         const tareaListadoViewModel = new tareaListadoViewModelFn();
 
-        setTimeout(() => {
-            //tareaListadoViewModel.tareas.push({titulo: 'Tarea1'});
-            tareaListadoViewModel.cargando(false);
-        }, 1000);
+        //setTimeout(() => {
+        //    //tareaListadoViewModel.tareas.push({titulo: 'Tarea1'});
+        //    tareaListadoViewModel.cargando(false);
+        //}, 1000);
+
+        obtenerTareas();
 
         ko.applyBindings(tareaListadoViewModel, document.getElementById('contenedor-listado-tareas'));
     </script>

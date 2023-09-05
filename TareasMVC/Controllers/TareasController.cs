@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TareasMVC.Entidades;
+using TareasMVC.Models;
 using TareasMVC.Servicios;
 
 namespace TareasMVC.Controllers
@@ -10,11 +13,30 @@ namespace TareasMVC.Controllers
     {
         private readonly ApplicationDbContext context;
         private readonly IServicioUsuarios servicioUsuarios;
+        private readonly IMapper mapper;
 
-        public TareasController(ApplicationDbContext context, IServicioUsuarios servicioUsuarios) 
+        public TareasController(
+            ApplicationDbContext context, 
+            IServicioUsuarios servicioUsuarios,
+            IMapper mapper) 
         {
             this.context = context;
             this.servicioUsuarios = servicioUsuarios;
+            this.mapper = mapper;
+        }
+
+        [HttpGet]
+        public async Task<List<TareaDTO>> Get()
+        {
+            var usuarioId = servicioUsuarios.ObtenerUsuarioId();
+            var tareas = await context.Tareas
+                .Where(t => t.UsuarioCreacionId == usuarioId)
+                .OrderBy(t => t.Orden)
+                .ProjectTo<TareaDTO>(mapper.ConfigurationProvider)
+                //.Select(t => new TareaDTO{Id= t.Id,Titulo = t.Titulo })
+                .ToListAsync();
+
+            return tareas;
         }
 
         [HttpPost]

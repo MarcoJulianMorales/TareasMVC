@@ -93,3 +93,5 @@ C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Recu
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.RecursoCompartido.es.resources
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Shared._TraduccionesJs.en.resources
 C:\Projects\ASP.NET\TareasMVC\TareasMVC\obj\Debug\net7.0\TareasMVC.Recursos.Views.Shared._TraduccionesJs.es.resources
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\AutoMapper.dll
+C:\Projects\ASP.NET\TareasMVC\TareasMVC\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
