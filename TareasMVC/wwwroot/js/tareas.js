@@ -86,6 +86,33 @@ async function enviarIdsTareasAlBackend(ids) {
     });
 }
 
+async function manejarClickTarea(tarea) {
+    if (tarea.esNuevo()) {
+        return;
+    }
+
+    const respuesta = await fetch(`${urlTareas}/${tarea.id()}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+
+    if (!respuesta.ok) {
+        manejarErrorApi(respuesta);
+        return;
+    }
+
+    const json = await respuesta.json();
+    console.log(json);
+
+    tareaEditarVM.id = json.id;
+    tareaEditarVM.titulo(json.titulo);
+    tareaEditarVM.descripcion(json.descripcion);
+
+    EditTaskModalBootstrap.show();
+}
+
 $(function () {
     $("#reordenable").sortable({
         axis: 'y',

@@ -9,16 +9,16 @@ using TareasMVC.Servicios;
 namespace TareasMVC.Controllers
 {
     [Route("api/tareas")]
-    public class TareasController: ControllerBase
+    public class TareasController : ControllerBase
     {
         private readonly ApplicationDbContext context;
         private readonly IServicioUsuarios servicioUsuarios;
         private readonly IMapper mapper;
 
         public TareasController(
-            ApplicationDbContext context, 
+            ApplicationDbContext context,
             IServicioUsuarios servicioUsuarios,
-            IMapper mapper) 
+            IMapper mapper)
         {
             this.context = context;
             this.servicioUsuarios = servicioUsuarios;
@@ -37,6 +37,20 @@ namespace TareasMVC.Controllers
                 .ToListAsync();
 
             return tareas;
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Tarea>> Get(int id)
+        {
+            var usuarioId = servicioUsuarios.ObtenerUsuarioId();
+            var tarea = await context.Tareas.FirstOrDefaultAsync(t => t.Id == id && t.UsuarioCreacionId == usuarioId);
+
+            if (tarea == null)
+            {
+                return NotFound();
+            }
+
+            return tarea;
         }
 
         [HttpPost]
